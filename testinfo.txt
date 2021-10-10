@@ -1,0 +1,66 @@
+one_domain_say.sh:  
+
+This test case checks the functionality of code, when there is only one domain, and a 
+client sends SAY message. This test makes sure that the correct pipes receive the 
+appropriate RECEIVE message.
+
+multiple_domain_say.sh:
+
+This test case checks the functionality of code, when there are multiple domains, and a 
+client sends SAY message. This test makes sure that the correct pipes, in the correct domain 
+receive the appropriate RECEIVE message.
+
+same_domain_receive.sh:
+
+This test case makes sure that when a client sends SAY message, then only the clients 
+in that domain receive the message. Clients in other domain, should not get 
+the RECEIVE message.
+
+correct_pipe_receive.sh:
+
+This test case makes sure that when a client sends SAY message, then all the other 
+clients in that domain receive the message. Clients sending the message, should 
+not get the RECEIVE message.
+
+one_domain_say_recv_cont.sh: 
+
+This test case checks the functionality of code, when there is only one domain, and a 
+client sends SAYCONT message. This test makes sure that the correct pipes receive the 
+appropriate RECEIVECONT message, in CORRECT ORDER.
+
+multiple_domain_say_recv_cont.sh:
+
+This test case checks the functionality of code, when there are multiple domains, and a 
+client sends SAYCONT message. This test makes sure that the correct pipes in correct domain 
+receive the appropriate RECVCONT message, in CORRECT ORDER.
+
+mixed_say_say_cont.sh:
+
+This function tests the functionality of code, when both SAY, and SAYCONT messages
+are sent by the client.
+
+disconnect.sh:
+
+This function tests whether the client pipes are being deleted on sendinga DISCONNECT message or not.
+
+zombie_processes.sh:
+
+This function checks for the presence of zombie processes after client disconnects.
+
+check_files.sh:
+This function tests whether required pipes are created or not.
+
+check_domain.sh:
+This function tests whether required folders are created or not.
+
+ping_pong.sh:
+This test case tests the functionality of PING PONG.
+
+ping_pong_disconnect.sh:
+This test checks the functionality of code when the client is not active, so 
+we disconnect it.
+
+
+
+
+
